@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Routes to HTML and API requests will go here
-
+require('./routes/htmlRoutes')(app);
 
 //Run the server
 app.listen(PORT, () => {
