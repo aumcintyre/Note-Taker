@@ -14,6 +14,7 @@ app.use(express.json());
 
 //Routes to HTML and API requests will go here
 require('./routes/htmlRoutes')(app);
+require('./routes/apiRoutes')(app);
 
 //Run the server
 app.listen(PORT, () => {
