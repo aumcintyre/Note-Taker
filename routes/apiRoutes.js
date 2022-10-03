@@ -36,5 +36,18 @@ module.exports = (app) => {
 
     //Function to delete notes will be added here.
 
+    app.delete('/api/notes/:id', (req, res) => {
+        //Reads the db.jsonfile and parses into JSON
+        var db = JSON.parse(fs.readFileSync('db/db.json'))
 
-}
+        //Will remove the selected note once the ID is pulled from it
+        var deletedNote = db.filter(item => item.id !== req.params.id);
+
+        //Rewrites all notes minus the one just deleted to the db.json file
+        fs.writeFileSync('db/db.json', JSON.stringify(deletedNote));
+
+        res.JSON(deletedNote);
+    })
+
+
+};
