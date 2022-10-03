@@ -16,9 +16,10 @@ Users should clone this repository from GitHub. Once the repo is cloned, the use
 
 ## Usage 
 Run the server using ```node server.js``` in the terminal.<br>
-Watch an example video here: 
-[Screencastify](https://watch.screencastify.com/v/QnT2Vs8ZepisWzJ1KRzd)<br>
-![Screenshot](./dist/webpage-screenshot1.png)
+
+![Screenshot](./images/screenshot.png)
+<br>
+![Screenshot](./images/screenshot-notes.png)
 
 ## License 
 This project is licensed under MIT
